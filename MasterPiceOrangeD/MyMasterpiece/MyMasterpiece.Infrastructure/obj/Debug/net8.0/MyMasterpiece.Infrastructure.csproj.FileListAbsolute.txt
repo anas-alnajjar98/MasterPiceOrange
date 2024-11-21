@@ -1,0 +1,17 @@
+C:\Users\Orange\Desktop\MyMasterpiece\MyMasterpiece.Infrastructure\bin\Debug\net8.0\MyMasterpiece.Infrastructure.deps.json
+C:\Users\Orange\Desktop\MyMasterpiece\MyMasterpiece.Infrastructure\bin\Debug\net8.0\MyMasterpiece.Infrastructure.dll
+C:\Users\Orange\Desktop\MyMasterpiece\MyMasterpiece.Infrastructure\bin\Debug\net8.0\MyMasterpiece.Infrastructure.pdb
+C:\Users\Orange\Desktop\MyMasterpiece\MyMasterpiece.Infrastructure\obj\Debug\net8.0\MyMasterpiece.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Orange\Desktop\MyMasterpiece\MyMasterpiece.Infrastructure\obj\Debug\net8.0\MyMasterpiece.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Orange\Desktop\MyMasterpiece\MyMasterpiece.Infrastructure\obj\Debug\net8.0\MyMasterpiece.Infrastructure.AssemblyInfo.cs
+C:\Users\Orange\Desktop\MyMasterpiece\MyMasterpiece.Infrastructure\obj\Debug\net8.0\MyMasterpiece.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Orange\Desktop\MyMasterpiece\MyMasterpiece.Infrastructure\obj\Debug\net8.0\MyMasterpiece.Infrastructure.dll
+C:\Users\Orange\Desktop\MyMasterpiece\MyMasterpiece.Infrastructure\obj\Debug\net8.0\refint\MyMasterpiece.Infrastructure.dll
+C:\Users\Orange\Desktop\MyMasterpiece\MyMasterpiece.Infrastructure\obj\Debug\net8.0\MyMasterpiece.Infrastructure.pdb
+C:\Users\Orange\Desktop\MyMasterpiece\MyMasterpiece.Infrastructure\obj\Debug\net8.0\ref\MyMasterpiece.Infrastructure.dll
+C:\Users\Orange\Desktop\MyMasterpiece\MyMasterpiece.Infrastructure\bin\Debug\net8.0\MyMasterpiece.Domain.dll
+C:\Users\Orange\Desktop\MyMasterpiece\MyMasterpiece.Infrastructure\bin\Debug\net8.0\MyMasterpiece.Domain.pdb
+C:\Users\Orange\Desktop\MyMasterpiece\MyMasterpiece.Infrastructure\obj\Debug\net8.0\MyMasterpiece.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Orange\Desktop\MyMasterpiece\MyMasterpiece.Infrastructure\obj\Debug\net8.0\MyMaster.B96500C5.Up2Date
+C:\Users\Orange\Desktop\MyMasterpiece\MyMasterpiece.Infrastructure\bin\Debug\net8.0\MyMasterpiece.Application.dll
+C:\Users\Orange\Desktop\MyMasterpiece\MyMasterpiece.Infrastructure\bin\Debug\net8.0\MyMasterpiece.Application.pdb

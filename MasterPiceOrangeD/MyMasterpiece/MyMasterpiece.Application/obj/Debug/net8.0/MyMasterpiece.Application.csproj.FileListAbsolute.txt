@@ -1,0 +1,12 @@
+C:\Users\Orange\Desktop\MyMasterpiece\MyMasterpiece.Application\bin\Debug\net8.0\MyMasterpiece.Application.deps.json
+C:\Users\Orange\Desktop\MyMasterpiece\MyMasterpiece.Application\bin\Debug\net8.0\MyMasterpiece.Application.dll
+C:\Users\Orange\Desktop\MyMasterpiece\MyMasterpiece.Application\bin\Debug\net8.0\MyMasterpiece.Application.pdb
+C:\Users\Orange\Desktop\MyMasterpiece\MyMasterpiece.Application\obj\Debug\net8.0\MyMasterpiece.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Orange\Desktop\MyMasterpiece\MyMasterpiece.Application\obj\Debug\net8.0\MyMasterpiece.Application.AssemblyInfoInputs.cache
+C:\Users\Orange\Desktop\MyMasterpiece\MyMasterpiece.Application\obj\Debug\net8.0\MyMasterpiece.Application.AssemblyInfo.cs
+C:\Users\Orange\Desktop\MyMasterpiece\MyMasterpiece.Application\obj\Debug\net8.0\MyMasterpiece.Application.csproj.CoreCompileInputs.cache
+C:\Users\Orange\Desktop\MyMasterpiece\MyMasterpiece.Application\obj\Debug\net8.0\MyMasterpiece.Application.dll
+C:\Users\Orange\Desktop\MyMasterpiece\MyMasterpiece.Application\obj\Debug\net8.0\refint\MyMasterpiece.Application.dll
+C:\Users\Orange\Desktop\MyMasterpiece\MyMasterpiece.Application\obj\Debug\net8.0\MyMasterpiece.Application.pdb
+C:\Users\Orange\Desktop\MyMasterpiece\MyMasterpiece.Application\obj\Debug\net8.0\ref\MyMasterpiece.Application.dll
+C:\Users\Orange\Desktop\MyMasterpiece\MyMasterpiece.Application\obj\Debug\net8.0\MyMasterpiece.Application.csproj.AssemblyReference.cache

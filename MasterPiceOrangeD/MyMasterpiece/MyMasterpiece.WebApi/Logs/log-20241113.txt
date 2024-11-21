@@ -1,0 +1,77 @@
+2024-11-13 16:00:46.305 +03:00 [INF] User profile is available. Using 'C:\Users\Orange\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-13 16:00:46.781 +03:00 [INF] Now listening on: https://localhost:7260
+2024-11-13 16:00:46.782 +03:00 [INF] Now listening on: http://localhost:5113
+2024-11-13 16:00:46.790 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-13 16:00:46.794 +03:00 [INF] Hosting environment: Development
+2024-11-13 16:00:46.795 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\MyMasterpiece\MyMasterpiece.WebApi
+2024-11-13 16:00:48.090 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7260/swagger/index.html - null null
+2024-11-13 16:00:48.351 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7260/swagger/index.html - 200 null text/html;charset=utf-8 268.4854ms
+2024-11-13 16:00:48.361 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7260/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-13 16:00:48.361 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7260/_vs/browserLink - null null
+2024-11-13 16:00:48.371 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7260/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 10.2294ms
+2024-11-13 16:00:48.476 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7260/_vs/browserLink - 200 null text/javascript; charset=UTF-8 114.7788ms
+2024-11-13 16:00:48.527 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7260/swagger/v1/swagger.json - null null
+2024-11-13 16:00:48.656 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7260/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 128.678ms
+2024-11-13 16:02:55.290 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7260/api/User/Submit - application/json 121
+2024-11-13 16:02:55.360 +03:00 [INF] Executing endpoint 'MyMasterpiece.WebApi.Controllers.UserController.SubmitContact (MyMasterpiece.WebApi)'
+2024-11-13 16:02:55.385 +03:00 [INF] Route matched with {action = "SubmitContact", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SubmitContact(MyMasterpiece.Application.DTOs.ContactDto) on controller MyMasterpiece.WebApi.Controllers.UserController (MyMasterpiece.WebApi).
+2024-11-13 16:02:55.606 +03:00 [INF] SubmitContact endpoint called for UserId: 1
+2024-11-13 16:02:55.994 +03:00 [WRN] No store type was specified for the decimal property 'CurrentHighestBid' on entity type 'Auction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-11-13 16:02:55.997 +03:00 [WRN] No store type was specified for the decimal property 'BidAmount' on entity type 'Bid'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-11-13 16:02:55.999 +03:00 [WRN] No store type was specified for the decimal property 'TotalAmount' on entity type 'OrderHistory'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-11-13 16:02:56.000 +03:00 [WRN] No store type was specified for the decimal property 'PaymentAmount' on entity type 'Payment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-11-13 16:02:56.001 +03:00 [WRN] No store type was specified for the decimal property 'StartingPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-11-13 16:02:56.632 +03:00 [INF] Executed DbCommand (54ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[Address], [u].[CreatedAt], [u].[Email], [u].[Gender], [u].[ImageUrl], [u].[IsAdmin], [u].[IsDeleted], [u].[Password], [u].[PasswordHash], [u].[PasswordSalt], [u].[UpdatedAt], [u].[Username], [u].[otp]
+FROM [Users] AS [u]
+WHERE [u].[UserId] = @__p_0
+2024-11-13 16:02:56.826 +03:00 [INF] Executed DbCommand (32ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = DateTime2), @p5='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Contacts] ([Email], [Message], [Name], [Subject], [SubmittedAt], [UserId])
+OUTPUT INSERTED.[ContactId]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-11-13 16:02:58.936 +03:00 [INF] Contact message saved and email sent for user: 1
+2024-11-13 16:02:58.941 +03:00 [INF] Contact submission successful for UserId: 1
+2024-11-13 16:02:58.951 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-13 16:02:58.958 +03:00 [INF] Executed action MyMasterpiece.WebApi.Controllers.UserController.SubmitContact (MyMasterpiece.WebApi) in 3567.6997ms
+2024-11-13 16:02:58.958 +03:00 [INF] Executed endpoint 'MyMasterpiece.WebApi.Controllers.UserController.SubmitContact (MyMasterpiece.WebApi)'
+2024-11-13 16:02:58.964 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7260/api/User/Submit - 200 null application/json; charset=utf-8 3673.9849ms
+2024-11-13 22:27:45.815 +03:00 [INF] User profile is available. Using 'C:\Users\Orange\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-13 22:27:46.067 +03:00 [INF] Now listening on: https://localhost:7260
+2024-11-13 22:27:46.068 +03:00 [INF] Now listening on: http://localhost:5113
+2024-11-13 22:27:46.072 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-13 22:27:46.073 +03:00 [INF] Hosting environment: Development
+2024-11-13 22:27:46.074 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\MyMasterpiece\MyMasterpiece.WebApi
+2024-11-13 22:27:46.760 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7260/swagger/index.html - null null
+2024-11-13 22:27:46.954 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7260/swagger/index.html - 200 null text/html;charset=utf-8 197.402ms
+2024-11-13 22:27:46.972 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7260/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-13 22:27:46.974 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7260/_vs/browserLink - null null
+2024-11-13 22:27:46.989 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7260/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 17.7182ms
+2024-11-13 22:27:47.030 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7260/_vs/browserLink - 200 null text/javascript; charset=UTF-8 56.146ms
+2024-11-13 22:27:47.073 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7260/swagger/v1/swagger.json - null null
+2024-11-13 22:27:47.216 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7260/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 143.7341ms
+2024-11-13 22:28:58.669 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7260/api/User/UpdateUserInfoWithImage/1 - multipart/form-data; boundary=----WebKitFormBoundarynWQZCsKWDYy1d4hB 10643
+2024-11-13 22:28:58.820 +03:00 [INF] Executing endpoint 'MyMasterpiece.WebApi.Controllers.UserController.UpdateUserInfoWithImage (MyMasterpiece.WebApi)'
+2024-11-13 22:28:58.887 +03:00 [INF] Route matched with {action = "UpdateUserInfoWithImage", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateUserInfoWithImage(Int32, MyMasterpiece.Application.DTOs.EditUserInfoDto) on controller MyMasterpiece.WebApi.Controllers.UserController (MyMasterpiece.WebApi).
+2024-11-13 22:28:59.316 +03:00 [INF] UpdateUserInfoWithImage called for UserId: 1
+2024-11-13 22:29:00.704 +03:00 [WRN] No store type was specified for the decimal property 'CurrentHighestBid' on entity type 'Auction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-11-13 22:29:00.708 +03:00 [WRN] No store type was specified for the decimal property 'BidAmount' on entity type 'Bid'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-11-13 22:29:00.710 +03:00 [WRN] No store type was specified for the decimal property 'TotalAmount' on entity type 'OrderHistory'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-11-13 22:29:00.712 +03:00 [WRN] No store type was specified for the decimal property 'PaymentAmount' on entity type 'Payment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-11-13 22:29:00.715 +03:00 [WRN] No store type was specified for the decimal property 'StartingPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-11-13 22:29:02.490 +03:00 [INF] Executed DbCommand (148ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[Address], [u].[CreatedAt], [u].[Email], [u].[Gender], [u].[ImageUrl], [u].[IsAdmin], [u].[IsDeleted], [u].[Password], [u].[PasswordHash], [u].[PasswordSalt], [u].[UpdatedAt], [u].[Username], [u].[otp]
+FROM [Users] AS [u]
+WHERE [u].[UserId] = @__p_0
+2024-11-13 22:29:03.035 +03:00 [INF] Executed DbCommand (40ms) [Parameters=[@p13='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = DateTime2), @p11='?' (Size = 4000), @p12='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Users] SET [Address] = @p0, [CreatedAt] = @p1, [Email] = @p2, [Gender] = @p3, [ImageUrl] = @p4, [IsAdmin] = @p5, [IsDeleted] = @p6, [Password] = @p7, [PasswordHash] = @p8, [PasswordSalt] = @p9, [UpdatedAt] = @p10, [Username] = @p11, [otp] = @p12
+OUTPUT 1
+WHERE [UserId] = @p13;
+2024-11-13 22:29:03.060 +03:00 [INF] User info updated successfully for UserId: 1
+2024-11-13 22:29:03.075 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-13 22:29:03.098 +03:00 [INF] Executed action MyMasterpiece.WebApi.Controllers.UserController.UpdateUserInfoWithImage (MyMasterpiece.WebApi) in 4198.7136ms
+2024-11-13 22:29:03.102 +03:00 [INF] Executed endpoint 'MyMasterpiece.WebApi.Controllers.UserController.UpdateUserInfoWithImage (MyMasterpiece.WebApi)'
+2024-11-13 22:29:03.124 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7260/api/User/UpdateUserInfoWithImage/1 - 200 null application/json; charset=utf-8 4455.3717ms

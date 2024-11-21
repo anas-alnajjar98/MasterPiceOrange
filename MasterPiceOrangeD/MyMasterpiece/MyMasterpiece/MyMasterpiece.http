@@ -1,0 +1,6 @@
+@MyMasterpiece_HostAddress = http://localhost:5160
+
+GET {{MyMasterpiece_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
